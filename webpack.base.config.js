@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const PATHS = {
     app: path.join(__dirname, 'source'),
@@ -19,8 +20,8 @@ module.exports = {
         filename: 'js/index.js'
     },
     resolve: {
-      modules: ['node_modules'],
-      extensions: ['.js', '.jsx']
+        modules: ['node_modules'],
+        extensions: ['.js', '.jsx']
     },
     module: {
         loaders: [
@@ -32,19 +33,19 @@ module.exports = {
                     presets: ['es2016', 'react']
                 }
             },
-            { 
+            {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
                 loader: 'file-loader?name=./fonts/[name].[ext]'
             },
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract({fallback: 'style-loader', use: ['css-loader', 'sass-loader']}),
+                loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: ['css-loader', 'sass-loader'] }),
                 include: PATHS.app_scss
             }
         ]
     },
     plugins: [
-        new ExtractTextPlugin('css/main.css')
+        new ExtractTextPlugin('css/main.css'),
     ]
 };
 

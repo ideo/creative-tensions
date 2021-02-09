@@ -14,7 +14,12 @@ const Footer = (props) => {
 					</div>
 				</row>
 				<row>
-					<div className="copyright">Creative Tensions ©2017 All rights reserved.</div>
+					<div className="copyright">Creative Tensions ©{new Date().getFullYear()} All rights reserved 
+					&nbsp;• <a target="_blank" href="https://www.ideo.com/privacy">IDEO Privacy Policy</a>
+					&nbsp;• <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd-VDt-8kvGYbCfKO-0jfDpzdak8u8kyCTv3Ke_XJikH5tDcQ/viewform">Do Not Sell My Personal Information</a>
+					
+					</div>
+					
 				</row>
 			</footer>
     ) 

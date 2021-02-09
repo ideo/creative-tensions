@@ -29,7 +29,7 @@ const App = () => {
         <div>
             <Header />
             <HeroContainer />
-            <FeaturedContainer />
+            {/* <FeaturedContainer /> */}
             <About />
             <AnimatedTension />
             <PastEventContainer />

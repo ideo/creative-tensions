@@ -2,7 +2,7 @@ import React from 'react'
 import EmbeddedVideo from '../EmbeddedVideo'
 
 const About = (props) => {
-	return (<section className="about dark grid">
+	return (<section className="about purple grid">
 				<h4 className="subtitle">About</h4>
 				<h1 className="title">Creative Tensions is a fresh approach to dialogue.</h1>
 				<row>
@@ -11,16 +11,7 @@ const About = (props) => {
 
 					</div>
 				</row>
-				<row>
-                    <EmbeddedVideo src="https://www.youtube.com/embed/-MttYjJil68" />
-                    <div>
-						<p><i>Creative Tensions: Empathy</i> at 2017 Sundance Film Fesitval with Anand Giridharadas and Gael García Bernal, moderated by Philip Himberg</p>
-					</div>
-                    <EmbeddedVideo src="https://www.youtube.com/embed/VcqDSs7XhC4?start=57" />
-					<div>
-						<p><i>Creative Tensions: Action</i> at CreativeMorningsNYC with Lisa Peterson and Purvi Shah, moderated by Fred Dust.</p>
-					</div>					
-				</row>
+				
 			</section>)
 
 }

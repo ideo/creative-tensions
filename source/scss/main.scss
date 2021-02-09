@@ -14,6 +14,7 @@ body {
 	width: 100%;
 }
 
+
 body {
 	font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
 	font-size: 16px;
@@ -501,10 +502,16 @@ row {
 
 // ABOUT //
 
+.about {
+	&.purple {
+		background: $event-purple;
+}
+}
 .embedded-video {
 	position: relative;
 	padding-bottom: 56.25%; // 16:9 //
 	margin: 0 auto;
+	clear: both;
 }
 
 .embedded-video > iframe {

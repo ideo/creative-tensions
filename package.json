@@ -5,9 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "copy-assets": "cp -r source/images public/images && cp source/index.html public/index.html",
     "watch": "webpack --config webpack.local.config.js --progress --colors --watch",
-    "build": "webpack --config webpack.local.config.js --progress --colors",
-    "build-production": "webpack --config webpack.prod.config.js --progress --colors"
+    "build": "webpack --config webpack.local.config.js --progress --colors && npm run copy-assets",
+    "build-production": "webpack --config webpack.prod.config.js --progress --colors && npm run copy-assets"
   },
   "author": "Lauren Shapiro",
   "license": "ISC",
