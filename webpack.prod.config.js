@@ -13,7 +13,7 @@ config.plugins = config.plugins.concat([
   new webpack.optimize.OccurrenceOrderPlugin(),
 
   // minifies your code
-  new UglifyJsPlugin()
+  // new UglifyJsPlugin()
 ])
 
 module.exports = config
